@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DarkStore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>DarkStore</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to DarkStore</h2>
+    <p>Modern dark fashion & gear</p>
+    <a href="#" class="btn">Shop Now</a>
+  </section>
+
+  <section class="products">
+    <h3>Featured Products</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="Product 1">
+        <h4>Product Name</h4>
+        <p>$29.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DarkStore. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+/* Basic dark theme */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #121212;
+  color: #f0f0f0;
+}
+
+header {
+  background: #1e1e1e;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #ccc;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 4em 2em;
+  background: #222;
+}
+
+.hero .btn {
+  background: #00c6ff;
+  color: #fff;
+  padding: 0.75em 2em;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.products {
+  padding: 2em;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2em;
+}
+
+.product {
+  background: #1e1e1e;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
